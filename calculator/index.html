@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div style="text-align: center; margin-top: 50px; font-size: 30px; font-weight: bolder;">
+        CALCULATOR
+    </div>
+    <div class="main-div">
+        <div>
+            <input class="inp-div" type="text" disabled id="inp" value="" placeholder="000000000000000000" >
+        </div>
+        <div class="first-four">
+            <div>
+                <button class="one" onclick="addValue(7)">7</button>
+            </div>
+            <div>
+                <button class="one" onclick="addValue(8)">8</button>
+            </div>
+            <div>
+                <button class="one" onclick="addValue(9)">9</button>
+            </div>
+            <div>
+                <button class="one multiply" onclick="addValue('/')">/</button>
+            </div>
+
+        </div>
+
+        <div class="first-four">
+            <div>
+                <button class="one" onclick="addValue(4)">4</button>
+            </div>
+            <div>
+                <button class="one" onclick="addValue(5)">5</button>
+            </div>
+            <div>
+                <button class="one" onclick="addValue(6)">6</button>
+            </div>
+            <div>
+                <button class="one multiply" onclick="addValue('x')">x</button>
+            </div>
+        </div>
+
+        <div class="first-four">
+            <div>
+                <button class="one" onclick="addValue(1)">1</button>
+            </div>
+            <div>
+                <button class="one" onclick="addValue(2)">2</button>
+            </div>
+            <div>
+                <button class="one" onclick="addValue(3)">3</button>
+            </div>
+            <div>
+                <button class="one multiply" onclick="addValue('+')">+</button>
+            </div>
+
+        </div>
+
+        <div class="first-four">
+
+            <div>
+                <button class="one" onclick="addValue(0)">0</button>
+            </div>
+            <div>
+                <button class="one" onclick="addValue('twoZero')">00</button>
+            </div>
+            <div>
+                <button class="one" onclick="calValue('=')">=</button>
+            </div>
+            <div>
+                <button class="one multiply" onclick="addValue('-')">-</button>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+            <div>
+                <button class="one dlt" onclick="dltValue()">Dlt</button>
+            </div>
+            <div>
+                <button class="clr" onclick="clrValue()">Clr</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
